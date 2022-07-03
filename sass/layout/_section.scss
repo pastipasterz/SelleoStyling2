@@ -1,0 +1,45 @@
+.section {
+  padding: $spacing-m $spacing-m $spacing-xl $spacing-m;
+
+  &__heading {
+    font-weight: 700;
+    padding-bottom: $spacing-xxl;
+    text-align: center;
+    // text-transform: uppercase;
+    @include respond(tab-port) {
+      font-size: 2 * $default-font-size;
+      text-align: left;
+    }
+  }
+  &__description {
+    padding-bottom: $spacing-xl;
+    @include respond(phone-land) {
+      padding: 0 $spacing-l $spacing-xl $spacing-l;
+    }
+    @include respond(tab-port) {
+      padding-right: $spacing-xl;
+      padding: 0 $spacing-xl 0 0;
+    }
+  }
+
+  &__img {
+    // width: 100%;
+
+    img {
+      width: 100%;
+      border-radius: $spacing-s;
+    }
+  }
+  &-info {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include respond(tab-port) {
+      display: grid;
+      column-gap: $spacing-xl;
+      row-gap: 9.6rem;
+      grid-template-columns: 2fr 3fr;
+      place-items: center;
+    }
+  }
+}

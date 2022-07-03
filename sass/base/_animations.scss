@@ -1,0 +1,37 @@
+@keyframes animacja1 {
+  0% {
+    opacity: 0;
+    transform: translate(-10rem);
+  }
+  80% {
+    transform: translate(2rem);
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animacja2 {
+  0% {
+    opacity: 0;
+    transform: translate(10rem);
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes animacjabutton {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}

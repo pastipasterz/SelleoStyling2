@@ -1,0 +1,15 @@
+.section-speakers {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-m;
+
+  @include respond(phone-land) {
+    display: grid;
+    column-gap: $spacing-m;
+    row-gap: 9.6rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include respond(tab-port) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
