@@ -1,0 +1,29 @@
+//kolorki
+
+$color-primary: #359960;
+$color-primary-light: #3fba74;
+$color-primary-dark: rgb(28, 125, 92);
+$color-secondary-light: #fece3e;
+$color-secondary-dark: #fe913e;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+$color-white: #fff;
+$color-black: #000;
+
+$default-font-size: 1.6rem;
+$font-size-l: 2.4rem;
+
+$spacing-s: $default-font-size / 2;
+$spacing-m: $default-font-size;
+$spacing-l: $default-font-size * 1.5;
+$spacing-xl: $default-font-size * 2;
+$spacing-xxl: $default-font-size * 2.5;
+$spacing-3xl: $default-font-size * 3;
+$spacing-4xl: $default-font-size * 4;

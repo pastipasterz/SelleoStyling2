@@ -4,7 +4,250 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>BBDays4IT</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="header__logo-box">
+          <a href="#">
+            <img
+              class="header__logo"
+              alt="BBDays4IT logo"
+              src="img/bbdays-logo.png"
+            />
+          </a>
+        </div>
+        <div class="burger">
+          <svg
+            class="burger__icon"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 8H15"
+              stroke="#323232"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 12H14"
+              stroke="#323232"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10.5 16H13.5"
+              stroke="#323232"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 21V21C7.029 21 3 16.971 3 12V12C3 7.029 7.029 3 12 3V3C16.971 3 21 7.029 21 12V12C21 16.971 16.971 21 12 21Z"
+              stroke="#323232"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#">Organizatorzy</a></li>
+          <li><a class="nav__link" href="#">Edycja 2019</a></li>
+          <li><a class="nav__link" href="#">Edycja 2020</a></li>
+          <li><a class="nav__link" href="#">Edycja 2019</a></li>
+          <li><a class="nav__link -cta" href="#">Zarejestruj się </a></li>
+        </ul>
+      </nav>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main"
+            >BBDays <br class="hide-tp" />4 IT</span
+          >
+          <span class="heading-primary--sub"
+            >Największa konferencja IT na podbeskidziu</span
+          >
+        </h1>
+        <a href="#" class="btn -light -animated">Dołącz do nas</a>
+      </div>
+    </header>
+    <main>
+      <section class="section section-info">
+        <div class="section-info_textbox">
+          <h2 class="section__heading">Bielsko-Biała gościnne dla fachowców</h2>
+          <p class="section__description">
+            Zapraszamy branżę IT, programistów, ludzi z całego świata.
+            Bielsko-Biała jest miastem gościnnym i lubi fachowców - mówi w
+            materiale video zapowiadającym nasze jesienne spotkania Jarosław
+            Klimaszewski, prezydent Bielska-Białej. Jesteście ciekawi, co
+            gospodarz stolicy Podbeskidzia sądzi o BBDAYS4.IT?
+          </p>
+        </div>
+        <div class="section__img">
+          <img
+            src="img/optimized/hero.avif"
+            alt="city Bielsko-Biała during beautifull weather"
+          />
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="section__heading">Nasi prelegenci</h2>
+        <div class="section-speakers">
+          <div class="speaker">
+            <img
+              src="img/optimized/dariusz-wylon.avif"
+              class="speaker__img"
+              alt="Dariusz Wylon"
+            />
+            <div class="speaker__content">
+              <div class="speaker__tags">
+                <span class="speaker__tag -socialmedia">Kołczing</span>
+                <span class="speaker__tag -coaching">Social media</span>
+              </div>
+
+              <p class="speaker__title">Dariusz Wylon</p>
+              <p class="speaker__description">
+                Co o wydarzeniu mówią przedstawiciele organizatorów? Wiele
+                ciekawego! W przygotowanym materiale video odnosimy się m.in. do
+                genezy powstania festiwalu BBDAS4IT, przybliżamy planowane
+                wydarzenie w trzeciej odsłonie naszego spotkania, mówimy także o
+                korzyściach zarówno dla uczestników, jak i partnerów.
+              </p>
+            </div>
+          </div>
+          <div class="speaker">
+            <img
+              src="img/optimized/shaquille-oneal (1).avif"
+              class="speaker__img"
+              alt="Dariusz Wylon"
+            />
+            <div class="speaker__content">
+              <div class="speaker__tags">
+                <span class="speaker__tag -socialmedia">Basketball</span>
+              </div>
+
+              <p class="speaker__title">Shaq</p>
+              <p class="speaker__description">
+                Co o wydarzeniu mówią przedstawiciele organizatorów? Wiele
+                ciekawego! W przygotowanym materiale video odnosimy się m.in. do
+                genezy powstania festiwalu BBDAS4IT, przybliżamy planowane
+                wydarzenie w trzeciej odsłonie naszego spotkania, mówimy także o
+                korzyściach zarówno dla uczestników, jak i partnerów.
+              </p>
+            </div>
+          </div>
+          <div class="speaker">
+            <img
+              src="img/optimized/mariuszpudzian.avif"
+              class="speaker__img"
+              alt="Dariusz Wylon"
+            />
+            <div class="speaker__content">
+              <div class="speaker__tags">
+                <span class="speaker__tag -socialmedia">Siła</span>
+              </div>
+
+              <p class="speaker__title">Mariusz Pudzianowski</p>
+              <p class="speaker__description">
+                Były strongman, a obecnie zawodnik mieszanych sztuk walki mimo
+                dojrzałego wieku, jak na sportowca, nie zamierza schodzić ze
+                sceny. Dla wielu kibiców MMA to bardzo dobra informacja, bo
+                Pudzian dostarcza mnóstwa emocji. Jego występy w klatce są
+                chętnie oglądane, a 43-latka wspiera rzesza fanów. Ci często
+                mogą być rozbawieni niektórymi wypowiedziami Pudzianowskiego.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-sponsors">
+        <h2 class="section-sponsors__heading">Nasi sponsorzy</h2>
+        <div class="section-sponsors__logos">
+          <img src="img/logos/ath-logo_white 2.png" alt="Techcrunch logo" />
+          <img src="img/logos/FCNTlogo_white.png" alt="Business Insider logo" />
+          <img
+            src="img/logos/PRECISELY-logo_white 2.png"
+            alt="The New York Times logo"
+          />
+          <img src="img/logos/rekord-si-logo_white.png" alt="Forbes logo" />
+          <img src="img/logos/BB_logo_white 2.png" alt="USA Today logo" />
+        </div>
+      </section>
+      <section class="section section-form">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="cta__heading">Zapisz się już teraz!</h2>
+            <p class="cta__text">
+              Mega konfa w Bielsku-Białej! Zapisz się na giga fajną
+              konferencję która trwa ponad tydzień. Wypełnij formularz aby
+              otrzymywać przeróżne informacje!
+            </p>
+
+            <form class="cta__form" name="sign-up">
+              <div>
+                <label for="full-name">Imię i nazwisko</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="Jan Kowalski"
+                  name="full-name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="email">Adres email</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="adres@przykład.com"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="select-where">Skąd się o nas dowiedziałeś?</label>
+                <select id="select-where" name="select-where" required>
+                  <option value="">Wybierz jedną opcję:</option>
+                  <option value="friends">Znajomi</option>
+                  <option value="youtube">Facebook</option>
+                  <option value="podcast">Instagram</option>
+                  <option value="ad">Darek</option>
+                  <option value="others">Inne źródło</option>
+                </select>
+              </div>
+
+              <button class="btn -form">Zapisz się</button>
+            </form>
+          </div>
+          <div
+            class="cta__img-box"
+            role="img"
+            aria-label="City Bielsko-Biała"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
 </html>
