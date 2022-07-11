@@ -2,7 +2,7 @@
   padding: $spacing-m $spacing-m $spacing-xl $spacing-m;
 
   &__heading {
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     padding-bottom: $spacing-xxl;
     text-align: center;
     // text-transform: uppercase;

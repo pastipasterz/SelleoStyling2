@@ -5,8 +5,8 @@
   border-radius: 0.8rem;
   background-image: linear-gradient(
     to right bottom,
-    $color-primary-dark,
-    $color-primary-light
+    $color-primary-500,
+    $color-primary-400
   );
   overflow: hidden;
   max-width: 106rem;
@@ -20,7 +20,7 @@
 
   .cta-text-box {
     padding: $spacing-xl;
-    color: $color-grey-dark-3;
+    color: $color-neutral-700;
     @include respond(tab-port) {
       padding: $spacing-3xl $spacing-4xl $spacing-4xl $spacing-4xl;
     }
@@ -44,8 +44,8 @@
   &__img-box {
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-dark, 0.35),
-        rgba($color-primary-light, 0.35)
+        rgba($color-primary-500, 0.35),
+        rgba($color-primary-400, 0.35)
       ),
       url("../../img/optimized/hero.avif");
     background-size: cover;
@@ -80,13 +80,13 @@
       font-family: inherit;
       color: inherit;
       border: none;
-      background-color: $color-grey-light-1;
+      background-color: $color-neutral-300;
       border-radius: $spacing-s / 2;
       box-shadow: 0 1px 2px rgba($color-black, 0.1);
     }
 
     & input::placeholder {
-      color: $color-grey-dark;
+      color: $color-neutral-500;
     }
     @include respond(tab-port) {
       grid-template-columns: 1fr 1fr;
@@ -94,7 +94,7 @@
 
     & *:focus {
       outline: none;
-      box-shadow: 0 0 0 0.8rem rgba($color-secondary-light, 0.5);
+      box-shadow: 0 0 0 0.8rem rgba($color-secondary-400, 0.5);
     }
   }
 }

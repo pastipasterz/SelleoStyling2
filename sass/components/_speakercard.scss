@@ -2,14 +2,12 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: $spacing-m;
   overflow: hidden;
-  transition: all 0.4s;
+  transition: box-shadow 0.5s, transform 0.5s;
   width: 100%;
   &:hover {
     transform: translateY(-1.2rem);
     box-shadow: 0 $spacing-xl $spacing-4xl rgba(0, 0, 0, 0.06);
   }
-  // &__description {
-  // }
   &__content {
     padding: $spacing-m $spacing-xl $spacing-xl $spacing-xl;
   }
@@ -21,24 +19,25 @@
   &__tag {
     display: inline-block;
     padding: $spacing-s / 2 $spacing-s;
-    font-size: 1.2rem; //tylko tu jest ten size
+    font-size: $small-font-size;
     text-transform: uppercase;
-    color: $color-grey-dark-3;
+    color: $color-neutral-700;
     border-radius: $spacing-4xl;
-    font-weight: 700;
-  }
-  & .-coaching {
-    background-color: $color-tertiary-dark;
-    color: $color-white;
-  }
-  & .-socialmedia {
-    background-color: $color-primary-light;
+    font-weight: $font-weight-bold;
+
+    &.-coaching {
+      background-color: $color-tertiary-500;
+      color: $color-white;
+    }
+    &.-socialmedia {
+      background-color: $color-primary-400;
+    }
   }
 
   &__title {
     font-size: $font-size-l;
-    color: $color-grey-dark-3;
-    font-weight: 700;
+    color: $color-neutral-700;
+    font-weight: $font-weight-bold;
     margin-bottom: $spacing-m;
   }
   &__attributes {

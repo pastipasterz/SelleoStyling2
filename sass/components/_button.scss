@@ -4,8 +4,8 @@
 
   padding: 1rem 2rem;
   display: inline-block;
-  transition: all 0.2s;
-  font-weight: 700;
+  transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  font-weight: $font-weight-bold;
   &:link,
   &:visited {
     text-decoration: none;
@@ -15,8 +15,8 @@
     }
   }
   &.-form {
-    background-color: $color-secondary-light;
-    color: $color-grey-dark-3;
+    background-color: $color-secondary-400;
+    color: $color-neutral-700;
     align-self: end;
     padding: 1.6rem 2rem;
     border: none;
@@ -28,14 +28,14 @@
   }
 
   &.-light {
-    background-color: $color-secondary-light;
-    color: $color-grey-dark-3;
+    background-color: $color-secondary-400;
+    color: $color-neutral-700;
     &::after {
-      background-color: $color-secondary-light;
+      background-color: $color-secondary-400;
     }
   }
   &:hover {
-    background-color: $color-secondary-dark;
+    background-color: $color-secondary-500;
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
@@ -58,7 +58,8 @@
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all 0.4s;
+    transition: scale 0.4s, opacity 0.4s, background-color 0.4s, box-shadow 0.4s,
+      transform 0.4s;
   }
 
   &.-animated {

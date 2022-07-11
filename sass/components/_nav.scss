@@ -10,7 +10,6 @@
   @include respond(tab-port) {
     padding-right: 0;
   }
-  // background-color: blue;
   &__list {
     display: none;
     list-style: none;
@@ -25,44 +24,35 @@
   &__link {
     display: inline-block;
     text-decoration: none;
-    color: $color-grey-light-1;
+    color: $color-neutral-300;
     font-weight: 400;
     font-size: $default-font-size;
-    transition: all 0.3s;
+    transition: color 0.2s;
 
     &:visited,
     &:link {
-      display: inline-block;
-      text-decoration: none;
       color: $color-white;
-      font-weight: 400;
-      font-size: $default-font-size;
-      transition: all 0.3s;
     }
     &:hover,
     &:active {
-      color: $color-secondary-dark;
+      color: $color-secondary-500;
     }
 
     &.-cta {
       padding: $spacing-s $spacing-m;
       border-radius: $spacing-s;
-      color: $color-grey-dark-3;
-      background-color: $color-secondary-light;
-      font-weight: 700;
+      color: $color-neutral-700;
+      background-color: $color-secondary-400;
+      font-weight: $font-weight-bold;
       font-size: $default-font-size;
 
       &:link,
       &:visited {
-        // padding: 0.8rem 0rem;
         border-radius: $spacing-s;
-        color: $color-grey-dark-3;
-        background-color: $color-secondary-light;
       }
       &:hover,
       &:active {
-        background-color: $color-secondary-dark;
-        color: $color-grey-dark-3;
+        background-color: $color-secondary-500;
       }
     }
   }
