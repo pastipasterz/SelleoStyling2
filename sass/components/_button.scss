@@ -1,0 +1,72 @@
+.btn {
+  border-radius: $spacing-s;
+  text-transform: uppercase;
+
+  padding: 1rem 2rem;
+  display: inline-block;
+  transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  font-weight: $font-weight-bold;
+  &:link,
+  &:visited {
+    text-decoration: none;
+    position: relative;
+    @include respond(tab-port) {
+      padding: $spacing-m $spacing-xl;
+    }
+  }
+  &.-form {
+    background-color: $color-secondary-400;
+    color: $color-neutral-700;
+    align-self: end;
+    padding: 1.6rem 2rem;
+    border: none;
+    cursor: pointer;
+    margin-top: $spacing-m;
+    @include respond(tab-port) {
+      margin-top: 0;
+    }
+  }
+
+  &.-light {
+    background-color: $color-secondary-400;
+    color: $color-neutral-700;
+    &::after {
+      background-color: $color-secondary-400;
+    }
+  }
+  &:hover {
+    background-color: $color-secondary-500;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    &::after {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 1rem 1rem rgba($color-black, 0.2);
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: $spacing-s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: scale 0.4s, opacity 0.4s, background-color 0.4s, box-shadow 0.4s,
+      transform 0.4s;
+  }
+
+  &.-animated {
+    animation: animacjabutton 0.5s ease-in-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+  @include respond(tab-port) {
+    padding: $spacing-m $spacing-xl;
+  }
+}

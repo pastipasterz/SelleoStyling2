@@ -1,0 +1,37 @@
+//kolorki
+
+$color-primary: #359960;
+$color-primary-400: #3fba74;
+$color-primary-500: rgb(28, 125, 92);
+$color-secondary-400: #fece3e;
+$color-secondary-500: #fe913e;
+
+$color-tertiary-400: #2998ff;
+$color-tertiary-500: #5643fa;
+
+$color-neutral-300: #f7f7f7;
+$color-neutral-400: #eee;
+$color-neutral-500: #777;
+$color-neutral-600: #999;
+$color-neutral-700: #333;
+$color-white: #fff;
+$color-black: #000;
+
+$font-face-body: "Lato";
+$font-family-body: $font-face-body, serif;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-weight-extrabold: 900;
+
+$default-font-size: 16px;
+$small-font-size: 12px;
+$font-size-l: 24px;
+
+$spacing-s: $default-font-size / 2;
+$spacing-m: $default-font-size;
+$spacing-l: $default-font-size * 1.5;
+$spacing-xl: $default-font-size * 2;
+$spacing-xxl: $default-font-size * 2.5;
+$spacing-3xl: $default-font-size * 3;
+$spacing-4xl: $default-font-size * 4;
